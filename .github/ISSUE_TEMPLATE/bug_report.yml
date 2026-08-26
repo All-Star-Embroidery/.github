@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem in an All Star Embroidery project
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, bridge tokens, customer information, or private supplier payloads.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: What is happening, and what did you expect instead?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable sequence that reproduces the problem.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: Plugin version, release, or commit SHA if known.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Production impact
+      description: Does this affect storefront, inventory, pricing, imports, media, orders, or only admin/development behavior?
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe logs or screenshots
+      description: Include only sanitized evidence with secrets and personal data removed.
