@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a focused improvement to an All Star Embroidery project
+title: "[Feature] "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What business or customer problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Desired behavior
+      description: Describe what should happen from the user's or operator's point of view.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Storefront / customer experience
+        - WordPress / WooCommerce administration
+        - Supplier catalog / import
+        - Inventory
+        - Pricing
+        - Product media
+        - Product taxonomy / filtering
+        - Bulk ordering / ASBO
+        - GitHub Actions / deployment
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints / things that must not change
+      description: Note compatibility, ownership, performance, security, or merchant-data requirements.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Success criteria
+      description: How will we know the change is complete and working correctly?
